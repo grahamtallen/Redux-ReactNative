@@ -15,11 +15,12 @@ export const selectBook = (book) => {
     }
 }
 
-export const fetchWeather = (city) => {
+export const fetchWeather = async (city) => {
     const url = `${api_url}&q=${city},us`;
     console.log(url);
 
-    const request = axios.get(url);
+    const request = await axios.get(url);
+    console.log('requesst', request);
     return {
         type: FETCH_WEATHER,
         payload: request

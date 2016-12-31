@@ -12,7 +12,7 @@ export default class TempList extends Component {
         return (
             <Container>
                 <Header>
-                    <Title>Temperatures</Title>
+                    <Title>Josiah  Allen</Title>
                 </Header>
                 <Content>
                     <SearchBar />
